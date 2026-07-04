@@ -1,0 +1,33 @@
+{
+  "name": "alerio-readwise-miniapp",
+  "version": "0.6.13",
+  "private": true,
+  "type": "module",
+  "description": "MentraOS mini app for glasses video/audio ingestion, storage, and approval-gated Readwise processing.",
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "doctor": "node scripts/doctor.mjs",
+    "test:sandbox": "sh scripts/run-sandbox.sh",
+    "start": "node src/app.js",
+    "dev": "node src/app.js",
+    "dev:all": "node scripts/dev-all.mjs",
+    "check": "node --check src/app.js && node --check src/book-video-processor.js && node --check src/domain.js && node --check src/ocr.js && node --check src/stream-recorder.js && node --check src/transcription.js && node --check src/video-worker.js && node --check scripts/dev-all.mjs && node --check scripts/doctor.mjs && node --check scripts/public-smoke.mjs && node --check scripts/run-sandbox.mjs && node --check scripts/setup.mjs",
+    "smoke:public": "node scripts/public-smoke.mjs",
+    "test": "node --test",
+    "worker:video": "node src/video-worker.js --loop",
+    "worker:video:once": "node src/video-worker.js --once"
+  },
+  "dependencies": {
+    "@mentra/sdk": "2.1.29",
+    "dotenv": "^16.6.1",
+    "express": "^4.19.2",
+    "multer": "^2.2.0",
+    "node-media-server": "^4.2.8"
+  },
+  "engines": {
+    "node": ">=20 <24"
+  },
+  "overrides": {
+    "jsonwebtoken": "^9.0.2"
+  }
+}

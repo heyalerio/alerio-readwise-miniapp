@@ -1,0 +1,12 @@
+{
+  "name": "Alerio Readwise",
+  "packageName": "com.alerio.mentra.bookreadwise",
+  "description": "Record Mentra glasses reading videos, store video/audio for review, and send approved highlights to Readwise.",
+  "permissions": ["camera", "microphone"],
+  "publicUrlEnv": "PUBLIC_URL",
+  "entrypoint": "src/app.js",
+  "consoleAppId": "",
+  "appStoreStatus": "DEVELOPMENT",
+  "visibility": "private",
+  "publishStatus": "registered_development"
+}

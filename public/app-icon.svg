@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Alerio Readwise</title>
+  <desc id="desc">A stylized open book and smart glasses mark with a golden highlight line.</desc>
+  <defs>
+    <linearGradient id="bg" x1="70" y1="54" x2="440" y2="472" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#163E3A"/>
+      <stop offset="0.54" stop-color="#0E2D35"/>
+      <stop offset="1" stop-color="#0B1F2A"/>
+    </linearGradient>
+    <linearGradient id="pageLeft" x1="106" y1="146" x2="248" y2="388" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFF7E3"/>
+      <stop offset="1" stop-color="#F5E7C6"/>
+    </linearGradient>
+    <linearGradient id="pageRight" x1="266" y1="146" x2="410" y2="388" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F7ECCF"/>
+      <stop offset="1" stop-color="#E8D8B4"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#06161C" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="385" cy="112" r="52" fill="#2EA7A0" opacity="0.18"/>
+  <circle cx="118" cy="398" r="74" fill="#F7B733" opacity="0.12"/>
+
+  <g filter="url(#softShadow)">
+    <path d="M102 145h104c39 0 70 31 70 70v182H158c-31 0-56-25-56-56V145Z" fill="url(#pageLeft)"/>
+    <path d="M236 215c0-39 31-70 70-70h104v196c0 31-25 56-56 56H236V215Z" fill="url(#pageRight)"/>
+    <path d="M256 176v220" stroke="#12333A" stroke-width="18" stroke-linecap="round"/>
+  </g>
+
+  <path d="M145 235h71c22 0 40-18 40-40 0 22 18 40 40 40h71" fill="none" stroke="#12333A" stroke-width="22" stroke-linecap="round"/>
+  <path d="M145 235h62" stroke="#2EA7A0" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
+  <path d="M305 235h62" stroke="#2EA7A0" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
+  <circle cx="214" cy="235" r="18" fill="#12333A"/>
+  <circle cx="298" cy="235" r="18" fill="#12333A"/>
+  <circle cx="214" cy="235" r="7" fill="#80D8D2"/>
+  <circle cx="298" cy="235" r="7" fill="#80D8D2"/>
+
+  <path d="M144 298h143" stroke="#F5B82E" stroke-width="28" stroke-linecap="round"/>
+  <path d="M317 298h48" stroke="#F5B82E" stroke-width="18" stroke-linecap="round" opacity="0.96"/>
+  <path d="M145 339h82" stroke="#12333A" stroke-width="18" stroke-linecap="round" opacity="0.9"/>
+  <path d="M315 339h64" stroke="#12333A" stroke-width="18" stroke-linecap="round" opacity="0.9"/>
+
+  <path d="M256 106l34 58h-68l34-58Z" fill="#F5B82E"/>
+</svg>

@@ -1,0 +1,25 @@
+# Publishing Checklist
+
+- [ ] `npm test`
+- [ ] `npm run check`
+- [ ] `npm audit --audit-level=moderate`
+- [ ] Confirm `.env`, `data/`, recordings, reading context, and pending highlights are not committed
+- [ ] Replace local Mentra Console ids/URLs with your own app values
+- [ ] Deploy with HTTPS public URL
+- [ ] Register `MENTRA_PACKAGE_NAME` in Mentra Developer Console
+- [ ] Add camera and microphone permissions
+- [ ] Configure app-specific `MENTRA_API_KEY`
+- [ ] Configure `READWISE_REVIEW_TOKEN`
+- [ ] Configure `READWISE_MEDIA_TOKEN_SECRET`
+- [ ] Configure `READWISE_RTMP_INGEST_SECRET`
+- [ ] Configure `READWISE_READING_CONTEXT_PATH` outside the repo or under ignored `data/`
+- [ ] Configure `READWISE_TELEGRAM_FORWARD_TOKEN` when using Telegram callbacks
+- [ ] Open/route the RTMP ingest TCP port from `READWISE_RTMP_PUBLIC_HOST`
+- [ ] Keep `READWISE_LIVE_WRITES=0` for dry-run tests
+- [ ] Real glasses double/long press creates a stored video/audio draft
+- [ ] Run `npm run worker:video:once` against a queued stored video draft
+- [ ] Verify one known book creates active reading context, then one partial book hint resolves from history
+- [ ] Configure `READWISE_TOKEN`
+- [ ] Set `READWISE_APPROVAL_ENABLED=1`
+- [ ] Enable `READWISE_LIVE_WRITES=1`
+- [ ] Publish private beta install link from Console
